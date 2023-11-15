@@ -9,7 +9,7 @@ class FlatsController < ApplicationController
   end
 
   def new
-  @flat = Flat.new
+    @flat = Flat.new
   end
 
   def create
@@ -26,5 +26,4 @@ class FlatsController < ApplicationController
   def flat_params
   params.require(:flat).permit(:name, :address, :description, :price_per_night, :number_of_guests)
   end
-
 end
